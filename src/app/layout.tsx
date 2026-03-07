@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Rajdhani, Space_Grotesk } from "next/font/google";
+
 import "./globals.css";
 import { Providers } from "@/components/providers";
+import { SiteNavbar } from "@/components/site-navbar";
+import { SiteFooter } from "@/components/site-footer";
 
 const headingFont = Rajdhani({
   variable: "--font-heading",
@@ -18,9 +21,12 @@ const bodyFont = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://macmagic-ai.github.io"),
-  title: "Algarve SimRacing | Portugal's Premier Sim Racing Experience",
+  title: {
+    default: "Algarve SimRacing | Portugal's Premier Sim Racing Experience",
+    template: "%s | Algarve SimRacing",
+  },
   description:
-    "Professional simulator rentals, coaching, streaming-ready rigs and private events in Portimao near Autodromo Internacional do Algarve.",
+    "Professional simulator rentals, coaching, streaming-ready rigs, events, and driver-focused training in Portimão.",
   applicationName: "Algarve SimRacing",
   alternates: {
     canonical: "https://macmagic-ai.github.io/algarvesimracing-web",
@@ -28,7 +34,7 @@ export const metadata: Metadata = {
   keywords: [
     "Algarve SimRacing",
     "sim racing Portugal",
-    "simulator rental Portimao",
+    "simulator rental Portimão",
     "iRacing Algarve",
     "Assetto Corsa Algarve",
     "sim racing coaching",
@@ -36,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Algarve SimRacing",
     description:
-      "Where Virtual Meets Reality. Elite sim racing sessions, events, and coaching in Portimao.",
+      "Where Virtual Meets Reality. Elite sim racing sessions, events, and coaching in Portimão.",
     url: "https://macmagic-ai.github.io/algarvesimracing-web",
     siteName: "Algarve SimRacing",
     locale: "en_US",
@@ -46,7 +52,7 @@ export const metadata: Metadata = {
         url: "/algarvesimracing-web/assets/008-900x900-1.jpg",
         width: 900,
         height: 900,
-        alt: "Algarve SimRacing simulator action setup",
+        alt: "Algarve SimRacing simulator setup",
       },
     ],
   },
@@ -54,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Algarve SimRacing",
     description:
-      "Portugal's Premier Sim Racing Experience in Portimao. Book your session now.",
+      "Portugal's Premier Sim Racing Experience in Portimão. Book your session now.",
     images: ["/algarvesimracing-web/assets/008-900x900-1.jpg"],
   },
   icons: {
@@ -70,7 +76,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${headingFont.variable} ${bodyFont.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
+            <SiteNavbar />
+            <main>{children}</main>
+            <SiteFooter />
+          </div>
+        </Providers>
       </body>
     </html>
   );
