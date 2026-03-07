@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { bp } from "@/lib/utils";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { MagicCard } from "@/components/magicui/magic-card";
@@ -85,7 +86,7 @@ export default function Home() {
         >
           <Link href="#hero" className="flex items-center gap-2">
             <Image
-              src="/assets/ASR_branco-1.png"
+              src={bp("/assets/ASR_branco-1.png")}
               alt="Algarve SimRacing logo"
               width={124}
               height={40}
@@ -152,7 +153,7 @@ export default function Home() {
             <div className="relative z-10">
               <MagicCard className="p-2">
                 <Image
-                  src="/assets/008-900x900-1.jpg"
+                  src={bp("/assets/008-900x900-1.jpg")}
                   alt="Algarve SimRacing action hero simulator shot"
                   width={900}
                   height={900}
@@ -198,7 +199,7 @@ export default function Home() {
             </BentoCard>
             <BentoCard className="md:col-span-1 md:row-span-2">
               <Image
-                src="/assets/002-1-scaled-900x900-1.jpg"
+                src={bp("/assets/002-1-scaled-900x900-1.jpg")}
                 alt="Interior professional simulator setup at Algarve SimRacing"
                 width={900}
                 height={900}
