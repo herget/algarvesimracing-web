@@ -42,7 +42,7 @@ const services = [
 const stripPhotos = [
   { img: "/assets/13-1024x714-1.jpg", alt: "McLaren wheel cockpit" },
   { img: "/assets/12-1024x768-1.jpg", alt: "Driver in action" },
-  { img: "/assets/Gabor-and-Jussi-1-scaled-900x900-1.jpg", alt: "Founders Gábor and Jussi" },
+  { img: "/assets/Gabor-and-Jussi-1-scaled-900x900-1.jpg", alt: "Founders Gabor and Jussi" },
   { img: "/assets/002-1-scaled-900x900-1.jpg", alt: "Karting at the track" },
   { img: "/assets/005-1-scaled-900x900-1.jpg", alt: "Race car at the circuit" },
   { img: "/assets/17-768x512-1.jpg", alt: "Racing action" },

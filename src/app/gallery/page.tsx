@@ -14,7 +14,7 @@ const photos = [
   { src: "/assets/15.jpg",                         alt: "Simulator 2 — green hex panels, triple screens",       w: 900, h: 675,  span: "" },
   { src: "/assets/13-1024x714-1.jpg",              alt: "Cockpit detail — McLaren GT steering wheel",           w: 900, h: 628,  span: "col-span-2" },
   { src: "/assets/12-1024x768-1.jpg",              alt: "Driver in action at the simulator",                    w: 900, h: 675,  span: "" },
-  { src: "/assets/Gabor-and-Jussi-1-scaled-900x900-1.jpg", alt: "Founders Gábor and Jussi at the kartodromo", w: 900, h: 900,  span: "" },
+  { src: "/assets/Gabor-and-Jussi-1-scaled-900x900-1.jpg", alt: "Founders Gabor and Jussi at the kartodromo", w: 900, h: 900,  span: "" },
   { src: "/assets/002-1-scaled-900x900-1.jpg",     alt: "KZ2 karts at Kartódromo Internacional do Algarve",    w: 900, h: 900,  span: "" },
   { src: "/assets/005-1-scaled-900x900-1.jpg",     alt: "Race car in the garage — real motorsport",            w: 900, h: 900,  span: "" },
   { src: "/assets/17-768x512-1.jpg",               alt: "Track action at the circuit",                         w: 768, h: 512,  span: "col-span-2" },
@@ -95,7 +95,7 @@ export default function GalleryPage() {
       <div className="mt-16">
         <h2 className="font-heading text-2xl font-bold text-zinc-900 dark:text-white mb-6">Real Racing</h2>
         <p className="text-zinc-500 dark:text-zinc-400 mb-8 max-w-2xl">
-          Behind every great sim setup is real track experience. Founders Gábor and Jussi race competitively at Kartódromo Internacional do Algarve and on circuits across Europe.
+          Behind every great sim setup is real track experience. Founders Gabor and Jussi race competitively at Kartódromo Internacional do Algarve and on circuits across Europe.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {trackPhotos.map((p, i) => (

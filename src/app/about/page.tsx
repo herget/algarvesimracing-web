@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const trackRecord = [
-  "Founders Gábor and Jussi are lifelong petrolheads and sim racing enthusiasts",
+  "Founders Gabor and Jussi are lifelong petrolheads and sim racing enthusiasts",
   "Both keep race karts (KZ2 and Rotax DD2) at Kartódromo Internacional do Algarve",
   "Track presence almost every week throughout the year",
   "Regular participation in track days at Autódromo Internacional do Algarve",
@@ -27,14 +27,14 @@ export default function AboutPage() {
         <MagicCard className="flex flex-col gap-4">
           <Image
             src={bp("/assets/Gabor-and-Jussi-1-scaled-900x900-1.jpg")}
-            alt="Gábor and Jussi, founders of Algarve SimRacing"
+            alt="Gabor and Jussi, founders of Algarve SimRacing"
             width={900}
             height={900}
             className="w-full rounded-xl object-cover"
             priority
           />
           <p className="text-zinc-700 dark:text-zinc-200">
-            Founded by <strong>Gábor and Jussi</strong>, Algarve SimRacing came from real racing
+            Founded by <strong>Gabor and Jussi</strong>, Algarve SimRacing came from real racing
             life, not just sim enthusiasm. They train, compete, and apply that same mentality to
             every session at ASR.
           </p>
