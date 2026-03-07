@@ -283,6 +283,7 @@ export default function Home() {
                 alt="Gabor and Jussi, founders of Algarve SimRacing"
                 width={900}
                 height={900}
+                priority
                 className="w-full rounded-xl object-cover"
               />
               <p className="text-zinc-800 dark:text-white/85">
