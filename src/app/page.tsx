@@ -118,13 +118,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,49,49,0.25),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(255,138,0,0.2),transparent_55%)]" />
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-24 sm:px-6 lg:grid-cols-2 lg:items-center">
             <div className="relative z-10">
-              <p className="mb-4 text-sm uppercase tracking-[0.2em] text-white/70 dark:text-white/70 light:text-black/60">Portimao, Portugal</p>
+              <p className="mb-4 text-sm uppercase tracking-[0.2em] text-zinc-500 dark:text-white/70">Portimao, Portugal</p>
               <h1 className="font-heading text-5xl font-bold leading-[0.95] sm:text-6xl md:text-7xl">
                 <AnimatedGradientText>
                   Portugal&apos;s Premier Sim Racing Experience
                 </AnimatedGradientText>
               </h1>
-              <p className="mt-6 max-w-xl text-base text-white/80 dark:text-white/80 light:text-black/70 sm:text-lg">
+              <p className="mt-6 max-w-xl text-base text-zinc-700 dark:text-white/80 sm:text-lg">
                 Where Virtual Meets Reality. Professional racing simulators, elite hardware, and real driver feedback near Autodromo Internacional do Algarve.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -138,19 +138,19 @@ export default function Home() {
                   <p className="font-heading text-3xl font-bold text-[#FF3131]">
                     <NumberTicker value={2} suffix="+" />
                   </p>
-                  <p className="text-sm text-white/70 dark:text-white/70 light:text-black/60">Professional Simulators</p>
+                  <p className="text-sm text-zinc-500 dark:text-white/70">Professional Simulators</p>
                 </div>
                 <div>
                   <p className="font-heading text-3xl font-bold text-[#FF3131]">
                     <NumberTicker value={42} suffix={'"'} />
                   </p>
-                  <p className="text-sm text-white/70 dark:text-white/70 light:text-black/60">Triple OLED Display</p>
+                  <p className="text-sm text-zinc-500 dark:text-white/70">Triple OLED Display</p>
                 </div>
                 <div>
                   <p className="font-heading text-3xl font-bold text-[#FF3131]">
                     <NumberTicker value={5090} />
                   </p>
-                  <p className="text-sm text-white/70 dark:text-white/70 light:text-black/60">RTX-Powered Rig</p>
+                  <p className="text-sm text-zinc-500 dark:text-white/70">RTX-Powered Rig</p>
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function Home() {
             {services.map((service) => (
               <MagicCard key={service.title}>
                 <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">{service.title}</h3>
-                <p className="mt-3 text-white/80 dark:text-white/80 light:text-black/70">{service.text}</p>
+                <p className="mt-3 text-zinc-700 dark:text-white/80">{service.text}</p>
               </MagicCard>
             ))}
           </div>
@@ -199,7 +199,7 @@ export default function Home() {
                 className="w-full rounded-xl object-cover"
               />
               <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">Simulator 1 — Triple 42&quot; OLED</h3>
-              <ul className="space-y-1 text-sm text-white/80 dark:text-white/80 light:text-black/70 dark:text-white/80 dark:text-white/80 light:text-black/70">
+              <ul className="space-y-1 text-sm text-zinc-700 dark:text-white/80">
                 <li>🏎 Sim-Lab P1-X frame + Speed1 racing seat</li>
                 <li>🎮 Simucube 2 Pro direct drive + Archer Artura GT wheel</li>
                 <li>🦶 Simucube Active Pedal brake + Simucube throttle</li>
@@ -217,7 +217,7 @@ export default function Home() {
                 className="w-full rounded-xl object-cover"
               />
               <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">Simulator 2 — Ultrawide 49&quot; or VR</h3>
-              <ul className="space-y-1 text-sm text-white/80 dark:text-white/80 light:text-black/70 dark:text-white/80 dark:text-white/80 light:text-black/70">
+              <ul className="space-y-1 text-sm text-zinc-700 dark:text-white/80">
                 <li>🏎 Custom frame + professional race seat</li>
                 <li>🎮 Simucube 2 Pro direct drive + Archer Artura GT wheel</li>
                 <li>🦶 Simucube Active Pedal brake + Simucube throttle</li>
@@ -242,7 +242,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="font-heading text-5xl font-bold">EUR99</p>
-                <p className="mt-2 text-sm text-white/70 dark:text-white/70 light:text-black/60">EUR49.50 per hour</p>
+                <p className="mt-2 text-sm text-zinc-500 dark:text-white/70">EUR49.50 per hour</p>
               </CardContent>
             </Card>
             <Card className="relative border-[#FF3131]/40">
@@ -252,7 +252,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="font-heading text-5xl font-bold">EUR160</p>
-                <p className="mt-2 text-sm text-white/70 dark:text-white/70 light:text-black/60">EUR40 per hour</p>
+                <p className="mt-2 text-sm text-zinc-500 dark:text-white/70">EUR40 per hour</p>
               </CardContent>
             </Card>
             <Card>
@@ -262,13 +262,13 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="font-heading text-5xl font-bold">EUR280</p>
-                <p className="mt-2 text-sm text-white/70 dark:text-white/70 light:text-black/60">EUR35 per hour</p>
+                <p className="mt-2 text-sm text-zinc-500 dark:text-white/70">EUR35 per hour</p>
               </CardContent>
             </Card>
           </div>
           <MagicCard className="mt-6">
             <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">Coaching Add-ons</h3>
-            <p className="mt-3 text-white/80 dark:text-white/80 light:text-black/70">
+            <p className="mt-3 text-zinc-700 dark:text-white/80">
               AI Coaching with real-time lap feedback: EUR15/hour. Professional telemetry and human coaching available on request.
             </p>
           </MagicCard>
@@ -285,10 +285,10 @@ export default function Home() {
                 height={900}
                 className="w-full rounded-xl object-cover"
               />
-              <p className="text-white/85 dark:text-white/85 light:text-black/80">
+              <p className="text-zinc-800 dark:text-white/85">
                 Founded by <strong>Gábor and Jussi</strong> — lifelong petrolheads, passionate racers, and sim racing enthusiasts. They keep their own race go-karts (KZ2 and Rotax DD2) at the Kartódromo Internacional do Algarve and hit the track almost every week.
               </p>
-              <p className="text-white/80 dark:text-white/80 light:text-black/70">
+              <p className="text-zinc-700 dark:text-white/80">
                 Regularly competing in track days at the Autódromo Internacional do Algarve and circuits across Europe, in both GT and Formula cars.
               </p>
             </MagicCard>
@@ -296,7 +296,7 @@ export default function Home() {
               <blockquote className="font-heading text-3xl font-semibold leading-tight text-[#ff8a00]">
                 &quot;For us, sim racing isn&apos;t just a game — it&apos;s an essential tool.&quot;
               </blockquote>
-              <p className="text-white/70 dark:text-white/70 light:text-black/60 italic">— Gábor and Jussi, Algarve SimRacing</p>
+              <p className="text-zinc-500 dark:text-white/70 italic">— Gábor and Jussi, Algarve SimRacing</p>
             </MagicCard>
           </div>
         </section>
@@ -305,7 +305,7 @@ export default function Home() {
           <MagicCard className="relative overflow-hidden">
             <div className="absolute -right-24 -top-24 h-56 w-56 rounded-full bg-[#FF3131]/30 blur-3xl" />
             <h2 className="relative z-10 font-heading text-4xl font-bold sm:text-5xl">Contact & Booking</h2>
-            <p className="relative z-10 mt-3 max-w-2xl text-white/80 dark:text-white/80 light:text-black/70">
+            <p className="relative z-10 mt-3 max-w-2xl text-zinc-700 dark:text-white/80">
               Reserve your session, event, or coaching slot now.
             </p>
             <div className="relative z-10 mt-8 flex flex-wrap gap-3">
@@ -335,7 +335,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-white/10 px-4 py-8 text-center text-sm text-white/55 dark:text-white/55 light:text-black/50 sm:px-6">
+      <footer className="border-t border-white/10 px-4 py-8 text-center text-sm text-zinc-500 dark:text-white/55 sm:px-6">
         Algarve SimRacing, Portimao, Portugal.
       </footer>
 
