@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { bp } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { MagicCard } from "@/components/magicui/magic-card";
@@ -78,8 +79,8 @@ const jsonLd = {
 
 export default function Home() {
   return (
-    <div className="relative overflow-x-hidden bg-[#060607] text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
+    <div className="relative overflow-x-hidden bg-[var(--background)] text-[var(--foreground)]">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl dark:bg-black/50 dark:border-white/10 light:bg-white/80 light:border-black/10">
         <nav
           className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6"
           aria-label="Main navigation"
@@ -101,9 +102,12 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <Button asChild variant="outline">
-            <Link href="#contact">Book Now</Link>
-          </Button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button asChild variant="outline">
+              <Link href="#contact">Book Now</Link>
+            </Button>
+          </div>
         </nav>
       </header>
 
@@ -185,36 +189,44 @@ export default function Home() {
           <p className="mt-3 max-w-2xl text-white/70">
             Two elite setups engineered for immersion, precision, and speed.
           </p>
-          <BentoGrid className="mt-10">
-            <BentoCard className="md:col-span-2 md:row-span-2">
-              <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">Simulator 1: Triple 42&quot; OLED</h3>
-              <ul className="mt-4 space-y-2 text-sm text-white/80">
-                <li>Sim-Lab P1-X frame + Speed1 racing seat</li>
-                <li>Simucube 2 Pro direct drive + Archer Artura GT wheel</li>
-                <li>Simucube Active Pedal brake + Simucube throttle</li>
-                <li>Triple 42&quot; ASUS ROG Swift OLED monitors</li>
-                <li>Custom PC with NVIDIA GeForce RTX 5090</li>
-                <li>Integrated livestream and podcast studio workflow</li>
-              </ul>
-            </BentoCard>
-            <BentoCard className="md:col-span-1 md:row-span-2">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <MagicCard className="flex flex-col gap-4">
               <Image
-                src={bp("/assets/002-1-scaled-900x900-1.jpg")}
-                alt="Interior professional simulator setup at Algarve SimRacing"
+                src={bp("/assets/008-900x900-1.jpg")}
+                alt="Algarve SimRacing Simulator 1 triple OLED setup"
                 width={900}
                 height={900}
-                className="h-full min-h-52 w-full rounded-xl object-cover"
+                className="w-full rounded-xl object-cover"
               />
-            </BentoCard>
-            <BentoCard className="md:col-span-3">
-              <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">
-                Simulator 2: Samsung G9 49&quot; Ultrawide or VR
-              </h3>
-              <p className="mt-3 text-white/80">
-                Custom race frame, Simucube 2 Pro, active pedal brake, Meta Quest 3 (512 GB) VR option, and Qubic System QS-BT 1 seatbelt tensioner for extra realism.
-              </p>
-            </BentoCard>
-          </BentoGrid>
+              <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">Simulator 1 — Triple 42&quot; OLED</h3>
+              <ul className="space-y-1 text-sm text-white/80 dark:text-white/80">
+                <li>🏎 Sim-Lab P1-X frame + Speed1 racing seat</li>
+                <li>🎮 Simucube 2 Pro direct drive + Archer Artura GT wheel</li>
+                <li>🦶 Simucube Active Pedal brake + Simucube throttle</li>
+                <li>🖥 Triple 42&quot; ASUS ROG Swift OLED monitors</li>
+                <li>⚡ NVIDIA GeForce RTX 5090-powered custom PC</li>
+                <li>📹 Livestream &amp; podcast studio integration</li>
+              </ul>
+            </MagicCard>
+            <MagicCard className="flex flex-col gap-4">
+              <Image
+                src={bp("/assets/002-1-scaled-900x900-1.jpg")}
+                alt="Algarve SimRacing Simulator 2 ultrawide setup"
+                width={900}
+                height={900}
+                className="w-full rounded-xl object-cover"
+              />
+              <h3 className="font-heading text-2xl font-semibold text-[#ff6d6d]">Simulator 2 — Ultrawide 49&quot; or VR</h3>
+              <ul className="space-y-1 text-sm text-white/80 dark:text-white/80">
+                <li>🏎 Custom frame + professional race seat</li>
+                <li>🎮 Simucube 2 Pro direct drive + Archer Artura GT wheel</li>
+                <li>🦶 Simucube Active Pedal brake + Simucube throttle</li>
+                <li>🖥 Samsung Odyssey G9 49&quot; ultrawide curved monitor</li>
+                <li>🥽 Option: Meta Quest 3 VR (512 GB)</li>
+                <li>🔒 Qubic System QS-BT 1 seatbelt tensioner</li>
+              </ul>
+            </MagicCard>
+          </div>
         </section>
 
         <section id="pricing" className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6">

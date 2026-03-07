@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rajdhani, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Providers } from "@/components/providers";
 
 const headingFont = Rajdhani({
   variable: "--font-heading",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     images: ["/algarvesimracing-web/assets/008-900x900-1.jpg"],
   },
   icons: {
-    icon: "/assets/ASR_favicon-32.png",
+    icon: "/algarvesimracing-web/assets/ASR_favicon-32.png",
   },
 };
 
@@ -67,9 +68,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${headingFont.variable} ${bodyFont.variable} antialiased`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

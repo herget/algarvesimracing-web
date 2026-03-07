@@ -1,8 +1,26 @@
 @import "tailwindcss";
 
-:root {
+/* Dark mode (default) */
+:root,
+.dark {
   --background: #060607;
   --foreground: #f5f5f5;
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --accent: #FF3131;
+  --radial-1: rgba(255, 49, 49, 0.12);
+  --radial-2: rgba(255, 138, 0, 0.08);
+}
+
+/* Light mode */
+.light {
+  --background: #f4f4f5;
+  --foreground: #0a0a0a;
+  --card-bg: rgba(0, 0, 0, 0.04);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --accent: #cc0000;
+  --radial-1: rgba(200, 0, 0, 0.06);
+  --radial-2: rgba(180, 80, 0, 0.05);
 }
 
 @theme inline {
@@ -13,7 +31,7 @@
 }
 
 * {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-color);
 }
 
 body {
@@ -22,10 +40,11 @@ body {
   font-family: var(--font-body), sans-serif;
   background-image: radial-gradient(
       circle at 10% -10%,
-      rgba(255, 49, 49, 0.12),
+      var(--radial-1),
       transparent 32%
     ),
-    radial-gradient(circle at 110% 110%, rgba(255, 138, 0, 0.08), transparent 30%);
+    radial-gradient(circle at 110% 110%, var(--radial-2), transparent 30%);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 html {
