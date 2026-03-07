@@ -175,6 +175,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Pro Driver Highlight ─────────────────────────── */}
+      <section className="mx-auto w-full max-w-6xl px-4 sm:px-6 py-8">
+        <div className="rounded-2xl border border-zinc-200 dark:border-white/10 bg-zinc-50 dark:bg-white/[0.02] overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-6 items-center">
+            <div className="aspect-[4/3] md:aspect-auto md:h-full overflow-hidden">
+              <Image
+                src={bp("/assets/noah-killion-algarve-simracing.png")}
+                alt="Noah Killion - AU4 Champion training at Algarve SimRacing"
+                width={600}
+                height={450}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="rounded-full bg-[#FF3131] px-3 py-1 text-xs font-semibold text-white uppercase tracking-wide">
+                  Featured Driver
+                </span>
+                <span className="text-xs text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
+                  Pro Training
+                </span>
+              </div>
+              <h2 className="font-heading text-2xl md:text-3xl font-bold text-zinc-900 dark:text-white">
+                Trusted by Champions
+              </h2>
+              <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+                <strong className="text-zinc-900 dark:text-white">Noah Killion</strong>, AU4 Champion, puts in the work at Algarve SimRacing for the Formula Winter Series. Professional racers trust our simulators for their race preparation.
+              </p>
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/community"
+                  className="inline-flex items-center rounded-lg bg-[#FF3131] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#cc0000] transition-colors"
+                >
+                  Meet Our Drivers
+                </Link>
+                <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                  #formula4 #formulawinterseries
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Full-width photo strip ─────────────────────────── */}
       <section className="mx-auto w-full max-w-6xl px-4 sm:px-6 py-4">
         <div className="flex gap-3 overflow-x-auto scrollbar-none pb-2">
