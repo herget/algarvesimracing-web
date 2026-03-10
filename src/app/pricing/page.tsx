@@ -15,7 +15,7 @@ const packages = [
     name: "Standard",
     price: "€99",
     details: "2 hours total · 1 x 2h session · up to 2 persons on 1 simulator",
-    rate: "~€49.50/h",
+    rate: "~€50/h",
   },
 ];
 

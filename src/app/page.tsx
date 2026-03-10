@@ -104,7 +104,7 @@ export default function HomePage() {
               {[
                 { v: "2", l: "Pro simulators" },
                 { v: "RTX 5090", l: "GPU power" },
-                { v: "€35/h", l: "From (Pro package)" },
+                { v: "€50/h", l: "From (Pro package)" },
                 { v: "5 min", l: "From Autódromo" },
               ].map((s) => (
                 <div key={s.v}>
