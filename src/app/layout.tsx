@@ -30,9 +30,7 @@ export const metadata: Metadata = {
   description:
     "Professional simulator rentals, coaching, streaming-ready rigs, events, and driver-focused training in Portimão.",
   applicationName: "Algarve SimRacing",
-  alternates: {
-    canonical: "/",
-  },
+
   keywords: [
     "Algarve SimRacing",
     "sim racing Portugal",
