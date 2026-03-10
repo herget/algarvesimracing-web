@@ -29,6 +29,7 @@
     "@types/react-dom": "^18.3.7",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.32",
+    "ico-to-png": "^0.2.2",
     "tailwindcss": "^4",
     "to-ico": "^1.1.5",
     "typescript": "^5"

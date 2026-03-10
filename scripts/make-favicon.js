@@ -2,7 +2,7 @@ const toIco = require('to-ico');
 const fs = require('fs');
 const path = require('path');
 
-const sizes = [16, 32, 48, 64, 128, 256];
+const sizes = [16, 32, 48, 64, 128];
 const inputDir = path.join(__dirname, '..', 'public', 'assets');
 const outputDir = path.join(__dirname, '..', 'public');
 
@@ -32,6 +32,7 @@ async function createFavicon() {
   
   console.log('favicon.ico created successfully!');
   console.log(`Sizes included: ${buffers.length}`);
+  console.log(`Output size: ${icoBuffer.length} bytes`);
 }
 
 createFavicon().catch(err => {
