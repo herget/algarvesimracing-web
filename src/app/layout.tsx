@@ -6,6 +6,7 @@ import "./globals.css";
 import { Providers } from "@/components/providers";
 import { SiteNavbar } from "@/components/site-navbar";
 import { SiteFooter } from "@/components/site-footer";
+import { StructuredData } from "@/components/structured-data";
 
 const headingFont = Rajdhani({
   variable: "--font-heading",
@@ -85,6 +86,7 @@ export default function RootLayout({
           customDomain="https://plausible-analytics-ce-production-c514.up.railway.app"
           trackOutboundLinks
         />
+        <StructuredData />
       </head>
       <body className={`${headingFont.variable} ${bodyFont.variable} antialiased`}>
         <Providers>
