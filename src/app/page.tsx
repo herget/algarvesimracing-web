@@ -182,7 +182,7 @@ export default function HomePage() {
             <div className="aspect-[4/3] md:aspect-auto md:h-full overflow-hidden">
               <Image
                 src={bp("/assets/sette-camara-coaching.jpg")}
-                alt="Sérgio Sette Câmara coaching at Algarve SimRacing"
+                alt="Sérgio Sette Câmara with Gabor at Algarve SimRacing"
                 width={600}
                 height={450}
                 className="w-full h-full object-cover"
@@ -201,7 +201,7 @@ export default function HomePage() {
                 Elite Driver Coaching
               </h2>
               <p className="mt-3 text-zinc-600">
-                Professional racing driver & coach <strong className="text-zinc-900">Sérgio Sette Câmara</strong> (@sergiosettecamara) at Algarve SimRacing preparing a client for the Portimão race weekend in the Mercedes-AMG GT3. Consistency, clear references, clean lines.
+                Professional racing driver & coach <strong className="text-zinc-900">Sérgio Sette Câmara</strong> (@sergiosettecamara) using our simulators to coach a client for the Portimão race weekend. Pictured with Algarve SimRacing co-founder Gabor discussing telemetry and race strategy for the Mercedes-AMG GT3.
               </p>
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <Link
