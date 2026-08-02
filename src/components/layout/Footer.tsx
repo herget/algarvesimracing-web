@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { bp } from "@/lib/utils";
-import { navLinks } from "@/data/site";
+import { contactDetails, navLinks } from "@/data/site";
 
 export function Footer() {
   return (
@@ -62,9 +62,9 @@ export function Footer() {
                 Zona Industrial Coca Maravilhas Lote 15,<br />8500-483 Portimão, Portugal
               </li>
               <li>
-                <a href="tel:+351915301376" className="flex items-center gap-2 text-sm text-zinc-500 hover:text-[#FF3131] transition-colors">
+                <a href={contactDetails.phoneHref} className="flex items-center gap-2 text-sm text-zinc-500 hover:text-[#FF3131] transition-colors">
                   <Phone size={15} className="shrink-0 text-[#FF3131]" />
-                  +351 915 301 376
+                  {contactDetails.phone}
                 </a>
               </li>
               <li>
