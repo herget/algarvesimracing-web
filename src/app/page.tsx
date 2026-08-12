@@ -286,6 +286,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Founder story ──────────────────────────────────── */}
+      <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6">
+        <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white">
+          <div className="grid items-stretch md:grid-cols-[1.08fr_0.92fr]">
+            <Image
+              src={bp("/assets/stories/curva-lagos-simulator-training.jpg")}
+              alt="A driver approaching Curva Lagos at the Algarve circuit"
+              width={1600}
+              height={900}
+              className="aspect-video h-full w-full object-cover md:aspect-auto"
+            />
+            <div className="flex flex-col justify-center p-6 sm:p-9">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3131]">
+                From the founders
+              </p>
+              <h2 className="mt-3 font-heading text-3xl font-bold leading-tight text-zinc-900 sm:text-4xl">
+                Why sim racing helps before you drive the real track
+              </h2>
+              <p className="mt-4 leading-7 text-zinc-600">
+                Gabor explains how simulator training builds track knowledge, makes practice more
+                focused, and reveals costly mistakes while they still end with a reset button.
+              </p>
+              <Link
+                href="/stories/why-sim-racing-helps-real-drivers"
+                className="mt-6 inline-flex w-fit rounded-lg bg-[#FF3131] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#cc0000]"
+              >
+                Read the story
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Sim preview cards ──────────────────────────────── */}
       <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="font-heading text-3xl font-bold text-zinc-900 sm:text-4xl">The Simulators</h2>
