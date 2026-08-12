@@ -7,7 +7,7 @@ import { bp } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Simulators",
   description:
-    "Detailed simulator specs for both Algarve SimRacing rigs: Triple 42\" OLED setup and Samsung G9/VR setup with Simucube hardware.",
+    "Detailed simulator specs for both Algarve SimRacing rigs: Triple 42\" OLED and Samsung Odyssey G9 49\" setups with Simucube hardware.",
 };
 
 const gallery = [
@@ -55,13 +55,13 @@ export default function SimulatorsPage() {
         <MagicCard className="flex flex-col gap-5">
           <Image
             src={bp("/assets/15.jpg")}
-            alt="Simulator 2 ultrawide and VR setup"
+            alt="Simulator 2 ultrawide setup"
             width={1200}
             height={900}
             className="w-full rounded-xl object-cover"
           />
           <h2 className="font-heading text-3xl font-semibold text-[#FF3131]">
-            Simulator 2: Samsung G9 49&quot; or VR
+            Simulator 2: Samsung G9 49&quot;
           </h2>
           <ul className="space-y-2 text-sm text-zinc-700">
             <li>Custom-built frame + professional race seat</li>
@@ -69,7 +69,6 @@ export default function SimulatorsPage() {
             <li>Simucube Active pedal brake + Simucube throttle</li>
             <li>Archer Artura GT-style steering wheel</li>
             <li>Samsung Odyssey G9 49&quot; ultrawide curved monitor</li>
-            <li>Meta Quest 3 VR (512 GB) option</li>
             <li>Qubic System QS-BT 1 seatbelt tensioner</li>
           </ul>
         </MagicCard>

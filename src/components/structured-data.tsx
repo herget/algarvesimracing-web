@@ -5,7 +5,6 @@ export function StructuredData() {
     name: "Algarve SimRacing",
     description: "Professional simulator rentals, coaching, streaming-ready rigs, events, and driver-focused training in Portimão, Portugal.",
     url: "https://algarvesimracing.com",
-    telephone: "+351-910-673-344",
     email: "info@algarvesimracing.com",
     image: "https://algarvesimracing.com/assets/008-900x900-1.jpg",
     address: {
@@ -67,9 +66,9 @@ export function StructuredData() {
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+351-910-673-344",
       contactType: "Customer Service",
       email: "info@algarvesimracing.com",
+      url: "https://wa.me/351910673344",
       availableLanguage: ["English", "Portuguese"],
     },
   };

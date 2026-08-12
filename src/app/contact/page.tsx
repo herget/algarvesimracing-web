@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Instagram, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Instagram, MessageCircle } from "lucide-react";
 
 import { contactDetails } from "@/data/site";
 
@@ -43,17 +43,6 @@ export default function ContactPage() {
             <div>
               <p className="font-semibold text-zinc-900">Email</p>
               <p className="text-sm text-zinc-600">{contactDetails.email}</p>
-            </div>
-          </a>
-
-          <a 
-            href={contactDetails.phoneHref}
-            className="flex items-center gap-3 rounded-xl border border-zinc-200 bg-white p-4 transition hover:border-[#FF3131]"
-          >
-            <Phone size={24} className="text-[#FF3131]" />
-            <div>
-              <p className="font-semibold text-zinc-900">Phone</p>
-              <p className="text-sm text-zinc-600">{contactDetails.phone}</p>
             </div>
           </a>
 

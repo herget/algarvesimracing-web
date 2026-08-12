@@ -76,6 +76,5 @@ export const driverStories: DriverStory[] = [
   { id: "4", name: "Carlos P.", initial: "C", image: "/assets/13-1024x714-1.jpg", quote: "Drove a Porsche 911 RSR at Le Mans. Already booked my next session! 🏁", date: "Mar 3" },
   { id: "5", name: "Marta S.", initial: "M", image: "/assets/12-1024x768-1.jpg", quote: "Our whole team came for a private event. Absolutely loved it 🙌", date: "Mar 2" },
   { id: "6", name: "Tom B.", initial: "T", image: "/assets/15.jpg", quote: "iRacing on triple screens with proper Simucube feedback — nothing else compares 👌", date: "Mar 1" },
-  { id: "7", name: "Ana C.", initial: "A", image: "/assets/008-900x900-1.jpg", quote: "VR mode on Sim 2 is a completely different experience. Mind-blowing 🥽", date: "Feb 28" },
   { id: "8", name: "Diogo V.", initial: "D", image: "/assets/11-1536x1152-1.jpg", quote: "Now I understand why pro drivers use simulators. This is serious gear.", date: "Feb 27" },
 ];

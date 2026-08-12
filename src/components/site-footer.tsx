@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 import { bp } from "@/lib/utils";
 import { contactDetails, navLinks, legalLinks } from "@/data/site";
@@ -47,8 +47,14 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-zinc-600">
             <li>{contactDetails.address}</li>
             <li>
-              <a href={contactDetails.phoneHref} className="transition hover:text-[#FF3131]">
-                {contactDetails.phone}
+              <a
+                href={contactDetails.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 transition hover:text-[#FF3131]"
+              >
+                <MessageCircle size={16} />
+                Message us on WhatsApp
               </a>
             </li>
             <li>

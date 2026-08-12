@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Instagram, MessageCircle, Mail, MapPin } from "lucide-react";
 import { bp } from "@/lib/utils";
 import { contactDetails, navLinks } from "@/data/site";
 
@@ -62,9 +62,9 @@ export function Footer() {
                 Zona Industrial Coca Maravilhas Lote 15,<br />8500-483 Portimão, Portugal
               </li>
               <li>
-                <a href={contactDetails.phoneHref} className="flex items-center gap-2 text-sm text-zinc-500 hover:text-[#FF3131] transition-colors">
-                  <Phone size={15} className="shrink-0 text-[#FF3131]" />
-                  {contactDetails.phone}
+                <a href={contactDetails.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-zinc-500 hover:text-[#FF3131] transition-colors">
+                  <MessageCircle size={15} className="shrink-0 text-[#FF3131]" />
+                  Message us on WhatsApp
                 </a>
               </li>
               <li>

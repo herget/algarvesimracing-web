@@ -333,11 +333,11 @@ export default function HomePage() {
             </div>
           </Link>
           <Link href="/simulators" className="group block rounded-2xl overflow-hidden relative">
-            <Image src={bp("/assets/15.jpg")} alt="Simulator 2 – Ultrawide / VR" width={800} height={500} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+            <Image src={bp("/assets/15.jpg")} alt="Simulator 2 – Ultrawide" width={800} height={500} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-5">
               <p className="font-heading text-xl font-bold text-white">Simulator 2</p>
-              <p className="text-sm text-white/70">Samsung G9 49″ · Simucube 2 Pro · Meta Quest 3 VR</p>
+              <p className="text-sm text-white/70">Samsung G9 49″ · Simucube 2 Pro</p>
             </div>
           </Link>
         </div>

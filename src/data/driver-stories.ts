@@ -43,12 +43,6 @@ export const driverStories: DriverStory[] = [
     image: "/assets/15.jpg",
   },
   {
-    id: "driver-7",
-    name: "Ana C.",
-    quote: "VR mode blew my mind 🥽",
-    image: "/assets/008-900x900-1.jpg",
-  },
-  {
     id: "driver-8",
     name: "Diogo V.",
     quote: "Now I understand why pros use sims",

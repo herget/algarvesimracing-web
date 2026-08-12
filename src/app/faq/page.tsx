@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "What is the difference between Simulator 1 and Simulator 2?",
-    a: "Sim 1 uses a triple 42\" ASUS ROG Swift OLED setup — three screens wrap your peripheral vision. Sim 2 gives you a choice: a massive 49\" Samsung Odyssey G9 ultrawide curved monitor, or full VR with the Meta Quest 3 (512 GB). Both have Simucube 2 Pro wheelbase and Archer Artura GT steering wheel.",
+    a: "Sim 1 uses a triple 42\" ASUS ROG Swift OLED setup — three screens wrap your peripheral vision. Sim 2 uses a massive 49\" Samsung Odyssey G9 ultrawide curved monitor. Both have a Simucube 2 Pro wheelbase and Archer Artura GT steering wheel.",
   },
   {
     q: "What is AI Coaching?",
